@@ -42,8 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DivOperation.cs" />
+    <Compile Include="SubOperation.cs" />
+    <Compile Include="MultOperation.cs" />
+    <Compile Include="Operation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SumOperation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
