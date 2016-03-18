@@ -14,13 +14,8 @@ namespace Calc
         {
             if (Args.Length-1 > ArgCount)
             {
-               
                 Console.WriteLine("Для операции " + Name + " возможно использовать только " + ArgCount + " аргумента(ов). Пример: " + Name + " 4,99 2");
-
             }
-            //this.Name = Name;
-            // this.ArgCount = ArgCount;
-
             Console.WriteLine(Name + "= ");
         }
       
