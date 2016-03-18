@@ -16,29 +16,28 @@ namespace Calc
                 {
                     Console.WriteLine("Введите команду а затем аргументы. Пример: sum 35 6,9 -4");
                     string[] strArgs = Console.ReadLine().Replace('.', ',').Split(' ');
+                    string name = strArgs[0];//первый элемент в массиве - операция
                     double[] intArgs = new double[strArgs.Length];
                     for (int i = 1; i < strArgs.Length; i++)
                     {
-
                         intArgs[i] = Convert.ToDouble(strArgs[i]);
                     }
-                    SumOperation Sum = new SumOperation();//инициализируем объекты
-                    MultOperation Mult = new MultOperation();
-                    SubOperation Sub = new SubOperation();
-                    DivOperation Div = new DivOperation();
-                    switch (strArgs[0])// смотрим на первый элемент и ищем совпадения
+                    switch (name)
                     {
-
                         case "sum":
+                            SumOperation Sum = new SumOperation();
                             Sum.Result(intArgs);
                             break;
                         case "mult":
+                            MultOperation Mult = new MultOperation();
                             Mult.Result(intArgs);
                             break;
                         case "div":
+                            DivOperation Div = new DivOperation();
                             Div.Result(intArgs);
                             break;
                         case "sub":
+                            SubOperation Sub = new SubOperation();
                             Sub.Result(intArgs);
                             break;
                     }
