@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exeption\ArgCountException.cs" />
     <Compile Include="Calculator.cs" />
     <Compile Include="Operations\AbstractOperation.cs" />
     <Compile Include="OperationFactory.cs" />

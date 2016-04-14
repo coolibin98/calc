@@ -10,11 +10,15 @@ namespace calc
     {
         public double Execute(double[] args)
         {
-            //if(args.Length == 2)//здесь должна быть валидация
-           // { 
-                    double x = args[0] - args[1];
-                    return x;
-            //}     
+            if(args.Length == 2)
+           { 
+                double x = args[0] - args[1];
+                return x;
+           }
+            else
+            {
+                throw new ArgCountException("Аргументов должно быть 2");
+            }
         }
     }
 }

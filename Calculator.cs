@@ -31,6 +31,10 @@ namespace calc
                 catch (KeyNotFoundException)
                 {
                     Console.WriteLine("Операция не распознана! Для просмотра списка доступных операций, наберите list");
+                } 
+                catch (ArgCountException ex)
+                {
+                    Console.WriteLine(ex.Message);
                 }
                 catch (Exception)
                 {
